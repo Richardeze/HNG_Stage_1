@@ -1,0 +1,8 @@
+# created by virtualenv automatically
+# Ignore environment folders and system files
+.venv/
+__pycache__/
+.idea/
+*.pyc
+.env
+
