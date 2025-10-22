@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify, abort
 from datetime import datetime, timezone
 import re
-import sqlite3
 from utils import (sha256_hash, is_palindrome, normalize_for_palindrome,
                    character_frequency_map, unique_characters, word_count)
 import db
