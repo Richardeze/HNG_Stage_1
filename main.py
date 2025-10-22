@@ -13,6 +13,12 @@ db.init_db()
 def iso_now():
     return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
+@app.route("/")
+def home():
+    return jsonify({
+        "message": "Welcome to the HNG Stage 1 String Analyzer API!"
+    }), 200
+
 @app.route("/strings", methods=["POST"])
 def create_string():
     data = request.get_json()
